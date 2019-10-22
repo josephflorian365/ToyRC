@@ -18,7 +18,7 @@ Dentro del primer proceso que se realiza para ser un trámite documentario, mesa
 
 - Simplificar la transcripción de datos
 
-El flujo de aprobación que deberá seguir el documento de trámiteserá definido por el sistema.
+- El flujo de aprobación que deberá seguir el documento de trámiteserá definido por el sistema.
 
 - El registrador puede cambiar los datos generales del documento de trámite en caso de error de registro
 
