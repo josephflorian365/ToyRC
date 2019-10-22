@@ -85,5 +85,7 @@ values
 ('3','9','10'),
 ('7','7','1'),
 ('10','10','2');
+SELECT * FROM DOCUMENTO;
+SELECT * FROM PERSONA;
 
 
