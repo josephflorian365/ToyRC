@@ -14,13 +14,14 @@ Dentro del primer proceso que se realiza para ser un trámite documentario, mesa
 - Atender al público usuario y orientar en la presentación de sus expedientes y documentos para realizar gestiones en la Institución.
 - Elaborar información estadística de los expedientes y documentos en forma mensual y efectuar las acciones correctivas que tuviera lugar.
 - Recepcionar, registrar, clasificar, derivar y realizar el seguimiento y control de los expedientes que ingresan a la organización.
+
 - Preparar anualmente el inventario de documentos archivados y elaborar la relación de documentos para su depuración..
 
-- Simplificar la transcripción de datos
+- Simplificar la transcripción de datos.
 
 - El flujo de aprobación que deberá seguir el documento de trámiteserá definido por el sistema.
 
-- El registrador puede cambiar los datos generales del documento de trámite en caso de error de registro
+- El registrador puede cambiar los datos generales del documento de trámite en caso de error de registro.
 
 ### Integrantes:
 - Florian Flores Joseph Jesús
