@@ -23,6 +23,8 @@ Dentro del primer proceso que se realiza para ser un trámite documentario, mesa
 
 - El registrador puede cambiar los datos generales del documento de trámite en caso de error de registro.
 
+### 
+
 ### Integrantes:
 - Florian Flores Joseph Jesús
 - Huapaya Rivera Diego
