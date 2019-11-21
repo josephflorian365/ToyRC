@@ -1,5 +1,5 @@
 -- DATOS A INGRESAR EN TABLA PERSONA
-INSERT INTO PERSONA(Nombre_Usr,Apellido_Usr,Telf_Usr,Tipo_Usr,DNI_Per)
+INSERT INTO PERSONA(NOMPER,APEPER,TELPER,TIPPER,DNIPER)
 VALUES
  ('luis','Perez','926598748','Trabajador','74184659'), -- codigo 1
  ('jose','Sanchez','975868452','Ciudadano','74145659'), -- codigo 2
@@ -13,7 +13,7 @@ VALUES
  ('Tanjiro','Kamado','926598748','Ciudadano','89189659'); -- codigo 10
  
  -- DATOS A INGRESAR EN TABLA TUPA
-INSERT INTO TUPA(Tipo_Tupa,Precio_Tupa,Plazo_Tupa)
+INSERT INTO TUPA(TIPTUPA,PRETUPA,PLATUPA)
  VALUES
 ('Recibo de pago por derechos','0.0',STR_TO_DATE('20/05/2005', '%d/%m/%Y')),
 ('Escrito fundamentado, firmado por el administrado y abogadoidentificando el acto cuestionado y prueba instrumental. ','0.0',STR_TO_DATE('20/05/2005', '%d/%m/%Y')),
@@ -27,10 +27,8 @@ INSERT INTO TUPA(Tipo_Tupa,Precio_Tupa,Plazo_Tupa)
 ('Acta de aprobacion de la respectiva modificacion','8.0',STR_TO_DATE('20/05/2005', '%d/%m/%Y'));
  -- ('RECURSO IMPUGNATORIO RECONSIDERACION ',0.0,STR_TO_DATE('20/05/2005', '%d/%m/%Y'));
 
-
- 
   -- DATOS A INGRESAR EN TABLA AREA
-INSERT INTO AREA(Nom_Area,Sub_Area)
+INSERT INTO AREA(NOMAREA,NOMSUBAREA)
  VALUES
  ('Gerencia Municipal','Gerencia de tributacion mmunicipal'), -- 1
  ('Gerencia Municipal','Jefe Registro Civil'),
@@ -45,7 +43,7 @@ INSERT INTO AREA(Nom_Area,Sub_Area)
  
   -- DATOS A INGRESAR EN TABLA ACTA
   
- INSERT INTO ACTA(Fech_Naci,Cod_Pers,Tip_Apta)
+ INSERT INTO ACTA(FECNACACTA,IDPER,TIPACTA)
  VALUES
  (STR_TO_DATE('20/05/2005', '%d/%m/%Y'),'10','Matrimonio'),
  (STR_TO_DATE('15/08/2000','%d/%m/%Y'),'3','Nacimiento'),
@@ -59,7 +57,7 @@ INSERT INTO AREA(Nom_Area,Sub_Area)
  (STR_TO_DATE('15/07/2000','%d/%m/%Y'),'9','Nacimiento');
  
  -- DATOS A INGRESAR EN TABLA DOCUMENTO
- INSERT INTO DOCUMENTO(Cod_Tupa,Tip_Doc,Cod_Pers)
+ INSERT INTO DOCUMENTO(IDTUPA,TIPDOC,IDPER)
  VALUES
 ('1','BUSQUEDA DE EXPEDIENTE EN ARCHIVO Y/O REINICIO DE TRAMITE','1'),
 ('2','RECURSO IMPUGNATORIO RECONSIDERACION ','2'),
@@ -73,19 +71,23 @@ INSERT INTO AREA(Nom_Area,Sub_Area)
 ('10','CERTIFICADO DOMICILIARIO','10');
 
 -- DATOS A INGRESAR EN TABLA PROCESO
-insert into PROCESO(Id_Pers,Id_Area,Id_Doc)
+insert into PROCESO(IDAREA,IDDOC)
 values
-('1','5','6'),
-('2','4','5'),
-('5','6','3'), 
-('9','3','4'), 
-('8','2','7'),
-('6','1','8'), 
-('4','8','9'),  
-('3','9','10'),
-('7','7','1'),
-('10','10','2');
+('1','5'),
+('2','4'),
+('5','6'), 
+('9','3'), 
+('8','2'),
+('6','1'), 
+('4','8'),  
+('3','9'),
+('7','7'),
+('10','10');
+
+
 SELECT * FROM DOCUMENTO;
 SELECT * FROM PERSONA;
+select * from tupa;
+
 
 
