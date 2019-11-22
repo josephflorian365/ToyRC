@@ -11,7 +11,6 @@ VALUES
  ('Ash','Carhuancho','975868452','Trabajador','96189659'), -- codigo 8
  ('Fanny','Piedra','975878452','Trabajador','65189659'), -- codigo 9
  ('Tanjiro','Kamado','926598748','Ciudadano','89189659'); -- codigo 10
- 
  -- DATOS A INGRESAR EN TABLA TUPA
 INSERT INTO TUPA(TIPTUPA,PRETUPA,PLATUPA)
  VALUES
@@ -83,11 +82,6 @@ values
 ('3','9'),
 ('7','7'),
 ('10','10');
-
-
-SELECT * FROM DOCUMENTO;
-SELECT * FROM PERSONA;
-select * from tupa;
 
 
 

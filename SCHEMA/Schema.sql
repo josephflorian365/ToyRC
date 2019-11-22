@@ -1,4 +1,4 @@
-create database ToyRC;
+create database if not exists ToyRC;
 use ToyRC;
 CREATE TABLE ACTA (
     IDACTA int NOT NULL AUTO_INCREMENT COMMENT 'Aqui se ingresara el Codigo de Cada Apta de nacimiento ',
@@ -7,7 +7,6 @@ CREATE TABLE ACTA (
     TIPACTA varchar(25) NOT NULL COMMENT 'Aqui se le agregara el tipo de acta que es por ejemplo: Nacimiento, Defunción o Matrimonio ',
     CONSTRAINT PARTIDA PRIMARY KEY (IDACTA)
 ) COMMENT 'En este tabla encontraremos el registro de las personas.sea de nacimiento, defunción y matrimonio ';
-
 -- Table: AREA
 CREATE TABLE AREA (
     IDAREA int NOT NULL AUTO_INCREMENT COMMENT 'Aquí se ingresara el código del Área',
@@ -17,7 +16,7 @@ CREATE TABLE AREA (
 ) COMMENT 'En esta tabla encontraremos el lugar de bienes o servicio que brindaran a la persona.';
 
 -- Table: DOCUMENTO
-CREATE TABLE DOCUMENTO (
+CREATE TABLE if not exists DOCUMENTO (
     IDDOC int NOT NULL AUTO_INCREMENT COMMENT 'Codigo de documento 
 ejemplo: ###-###',
     IDTUPA int NOT NULL COMMENT 'Codigo de tupac ',
@@ -27,7 +26,7 @@ ejemplo: ###-###',
 ) COMMENT 'En esta tabla encontraremos el documento junto con el tupa y caracteristicas del documento ';
 
 -- Table: PERSONA
-CREATE TABLE PERSONA (
+CREATE TABLE if not exists PERSONA (
     IDPER int NOT NULL AUTO_INCREMENT COMMENT 'Codigo del usuario (trabajador, ciudadano) ',
     NOMPER varchar(50) NOT NULL COMMENT 'Aqui se ingresara el nombre de los usuarios ',
     APEPER varchar(50) NOT NULL COMMENT 'Aqui se ingresara el apellido de los usuarios ',
@@ -47,7 +46,7 @@ CREATE TABLE if not exists PROCESO (
 ) COMMENT 'En esta tabla se encontrara el control de como se esta llevando el proceso del documento ';
 
 -- Table: TUPA
-CREATE TABLE TUPA (
+CREATE TABLE if not exists TUPA (
     IDTUPA int NOT NULL AUTO_INCREMENT COMMENT 'Aqui se ingresara el Codigo de Tupa',
     TIPTUPA varchar(150) NOT NULL COMMENT 'Aqui se ingresara el tipo de tupa junto a los requisitos que posee ',
     PRETUPA decimal(6,2) NOT NULL COMMENT 'Aqui se ingresara el precio que tiene cada tupa',
