@@ -4,7 +4,7 @@ CREATE TABLE ACTA (
     IDACTA int NOT NULL AUTO_INCREMENT COMMENT 'Aqui se ingresara el Codigo de Cada Apta de nacimiento ',
     FECNACACTA date NOT NULL COMMENT 'Aquí se ingresara la fecha de nacimiento de los usuarios ',
     IDPER int NOT NULL COMMENT 'Codigo del usuario (trabajador, ciudadano) ',
-    TIPACTA varchar(25) NOT NULL COMMENT 'Aqui se le agregara el tipo de acta que es por ejemplo: Nacimiento, Defunción o Matrimonio ',
+    TIPACTA varchar(50) NOT NULL COMMENT 'Aqui se le agregara el tipo de acta que es por ejemplo: Nacimiento, Defunción o Matrimonio ',
     CONSTRAINT PARTIDA PRIMARY KEY (IDACTA)
 ) COMMENT 'En este tabla encontraremos el registro de las personas.sea de nacimiento, defunción y matrimonio ';
 -- Table: AREA
@@ -20,7 +20,7 @@ CREATE TABLE if not exists DOCUMENTO (
     IDDOC int NOT NULL AUTO_INCREMENT COMMENT 'Codigo de documento 
 ejemplo: ###-###',
     IDTUPA int NOT NULL COMMENT 'Codigo de tupac ',
-    TIPDOC varchar(80) NOT NULL COMMENT 'aquí se pondrá el tipo de documento que se tramitara o se solicitara ',
+    TIPDOC varchar(200) NOT NULL COMMENT 'aquí se pondrá el tipo de documento que se tramitara o se solicitara ',
     IDPER int NOT NULL COMMENT 'Codigo del usuario (trabajador, ciudadano) ',
     CONSTRAINT DOCUMENTO_pk PRIMARY KEY (IDDOC)
 ) COMMENT 'En esta tabla encontraremos el documento junto con el tupa y caracteristicas del documento ';
@@ -48,7 +48,7 @@ CREATE TABLE if not exists PROCESO (
 -- Table: TUPA
 CREATE TABLE if not exists TUPA (
     IDTUPA int NOT NULL AUTO_INCREMENT COMMENT 'Aqui se ingresara el Codigo de Tupa',
-    TIPTUPA varchar(150) NOT NULL COMMENT 'Aqui se ingresara el tipo de tupa junto a los requisitos que posee ',
+    TIPTUPA varchar(300) NOT NULL COMMENT 'Aqui se ingresara el tipo de tupa junto a los requisitos que posee ',
     PRETUPA decimal(6,2) NOT NULL COMMENT 'Aqui se ingresara el precio que tiene cada tupa',
     PLATUPA date NOT NULL COMMENT 'Aquí se ingresara el plazo que tendra cada Tupa',
     CONSTRAINT TUPA_pk PRIMARY KEY (IDTUPA)
